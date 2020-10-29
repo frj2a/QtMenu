@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64"
+   height="64"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   sodipodi:docname="Movimento_ProgramadoCancelaDesl.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="6.3195565"
+     inkscape:cx="22.806735"
+     inkscape:cy="36.96429"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1231"
+     inkscape:window-height="867"
+     inkscape:window-x="201"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:snap-page="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-577.54646,-175.92379)">
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#0029ff;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 584.35896,176.92379 h 50.375 c 3.22013,0 5.8125,2.59237 5.8125,5.8125 v 50.375 c 0,3.22012 -2.59237,5.8125 -5.8125,5.8125 h -50.375 c -3.22012,0 -5.8125,-2.59238 -5.8125,-5.8125 v -50.375 c 0,-3.22013 2.59238,-5.8125 5.8125,-5.8125 z"
+       id="rect834" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path606"
+       style="fill:#e45d50;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 606.11266,209.43874 c -2.08718,1.61054 -5.79994,6.58263 -11.43431,12.23707 -1.04108,1.04609 -2.44591,0.69238 -2.21511,0.36375 3.22859,-4.5682 7.63875,-10.69928 11.56224,-15.24992 -1.98683,-2.66667 -4.43524,-6.06084 -6.43462,-9.14393 -1.46503,-2.26278 -1.35465,-5.52399 -0.44152,-7.99749 2.21512,3.83568 6.8059,9.67074 10.1223,13.54656 2.01944,-2.81969 9.8614,-9.40232 13.48134,-9.40232 1.746,0 1.32205,2.49357 1.79367,5.94544 -0.2609,-0.0427 -0.45657,-0.0627 -0.56444,-0.0627 -3.24114,0 -10.22013,3.4318 -12.47288,6.14111 2.47601,3.32894 10.18752,13.13264 14.40703,12.28222 -1.55033,3.86328 -3.09063,5.91784 -4.7689,5.91784 -2.9401,0 -11.19598,-12.5105 -13.0348,-14.57761" />
+  </g>
+</svg>

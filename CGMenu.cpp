@@ -43,7 +43,7 @@ CGMenu::CGMenu(QWidget *parent) : QWidget(parent)	{
 	mMenu4Estado = false;
 	mForm4 = new CQuickMenu();
 	mForm4->setVersion("iView Tecnologia Ind. e Com. Ltda.", "http://www.iviewtec.com.br", "suporte@iviewtec.com.br",
-				QString::fromUtf8("Versão: %1 - %2").arg(REV_CODE).arg(QString(REV_SUBVN_DATE)));
+				QString::fromUtf8("Versão: %1").arg(REV_CODE));
 	mWidget4 = new QGraphicsProxyWidget();
 	mWidget4->setWidget(mForm4);
 	adjustScale(mWidget4, mForm4->background());

@@ -1,7 +1,3 @@
-# "$Date: 2019-01-21 16:55:46 -0200 (seg, 21 jan 2019) $"
-# "$Author: chico $"
-# "$Revision: 67 $"
-
 QT += core gui svg widgets
 
 TARGET = menu
