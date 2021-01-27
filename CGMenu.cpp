@@ -192,80 +192,86 @@ void CGMenu::time4Changed(int time)	{
 void CGMenu::setNewBackgroud()	{
 	switch (mBackgroundIndex)	{
 		case 0:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig1_0")));
+			mBackgroundImage = QImage(":/JPEG/fig1_0");
 			break;
 		case 1:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig1_1")));
+			mBackgroundImage = QImage(":/JPEG/fig1_1");
 			break;
 		case 2:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig1_2")));
+			mBackgroundImage = QImage(":/JPEG/fig1_2");
 			break;
 		case 3:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig1_3")));
+			mBackgroundImage = QImage(":/JPEG/fig1_3");
 			break;
 		case 4:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig1_4")));
+			mBackgroundImage = QImage(":/JPEG/fig1_4");
 			break;
 		case 5:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig1_5")));
+			mBackgroundImage = QImage(":/JPEG/fig1_5");
 			break;
 		case 6:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig1_0")));
+			mBackgroundImage = QImage(":/JPEG/fig1_0");
 			break;
 		case 7:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig1_1")));
+			mBackgroundImage = QImage(":/JPEG/fig1_1");
 			break;
 		case 8:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig1_2")));
+			mBackgroundImage = QImage(":/JPEG/fig1_2");
 			break;
 		case 9:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig1_3")));
+			mBackgroundImage = QImage(":/JPEG/fig1_3");
 			break;
 		case 10:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig1_4")));
+			mBackgroundImage = QImage(":/JPEG/fig1_4");
 			break;
 		case 11:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig1_5")));
+			mBackgroundImage = QImage(":/JPEG/fig1_5");
 			break;
 		case 12:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig2_0")));
+			mBackgroundImage = QImage(":/JPEG/fig2_0");
 			break;
 		case 13:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig2_1")));
+			mBackgroundImage = QImage(":/JPEG/fig2_1");
 			break;
 		case 14:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig2_2")));
+			mBackgroundImage = QImage(":/JPEG/fig2_2");
 			break;
 		case 15:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig2_3")));
+			mBackgroundImage = QImage(":/JPEG/fig2_3");
 			break;
 		case 16:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig2_4")));
+			mBackgroundImage = QImage(":/JPEG/fig2_4");
 			break;
 		case 17:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig2_5")));
+			mBackgroundImage = QImage(":/JPEG/fig2_5");
 			break;
 		case 18:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig2_0")));
+			mBackgroundImage = QImage(":/JPEG/fig2_0");
 			break;
 		case 19:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig2_1")));
+			mBackgroundImage = QImage(":/JPEG/fig2_1");
 			break;
 		case 20:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig2_2")));
+			mBackgroundImage = QImage(":/JPEG/fig2_2");
 			break;
 		case 21:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig2_3")));
+			mBackgroundImage = QImage(":/JPEG/fig2_3");
 			break;
 		case 22:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig2_4")));
+			mBackgroundImage = QImage(":/JPEG/fig2_4");
 			break;
 		case 23:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig2_5")));
+			mBackgroundImage = QImage(":/JPEG/fig2_5");
 			break;
 		default:
-			gvMenu->setBackgroundBrush(QPixmap(QString::fromUtf8(":/JPEG/fig1_0")));
+			mBackgroundImage = QImage(":/JPEG/fig1_0");
 	}
+	gvMenu->setBackgroundBrush(mBackgroundImage);
+	/*
+	if (mBackgroundImage.format() == QImage::Format_RGB888) {
+		// cvMat = new cv::Mat(mBackgroundImage.height(), mBackgroundImage.width(), cv::);
+	}
+	*/
 	mBackgroundIndex++;
 	if (mBackgroundIndex >= 24)	mBackgroundIndex = 0;
 }

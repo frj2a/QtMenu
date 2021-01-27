@@ -9,7 +9,7 @@
 CTelaConfirmacao::CTelaConfirmacao(QWidget *parent) :	QWidget(parent)		{
 	setupUi(this);
 	mBasePos = QPointF(0.5 , 0.0);	// numbers meaning percent of screen
-	mTimeLine = new QTimeLine(1000, this);
+	mTimeLine = new QTimeLine(500, this);
 	mTimeLine->setCurveShape(QTimeLine::EaseInOutCurve);
 	mTimeLine->setFrameRange(0,100);
 	mBackground = new QGraphicsSvgItem(":/SVG/FundoTelaConfirmacao");

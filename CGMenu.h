@@ -8,6 +8,7 @@
 #include "ui_CGMenu.h"
 #include <QWidget>
 #include <QSize>
+#include <opencv2/opencv.hpp>
 
 class QTimer;
 class QGraphicsScene;
@@ -33,6 +34,8 @@ private:
 	qreal					mScale;
 	QSize					mBaseSize;
 	QTimer					* mBackgroundChangeTimer;
+	cv::Mat					* cvMat;
+	QImage					mBackgroundImage;
 
 	QGraphicsScene			* mGS;
 

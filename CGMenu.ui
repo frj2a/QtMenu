@@ -2,14 +2,6 @@
 <ui version="4.0">
  <class>CGMenu</class>
  <widget class="QWidget" name="CGMenu">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>800</width>
-    <height>623</height>
-   </rect>
-  </property>
   <property name="windowTitle">
    <string>CGMenu</string>
   </property>
@@ -31,12 +23,6 @@
    </property>
    <item>
     <widget class="QGraphicsView" name="gvMenu">
-     <property name="minimumSize">
-      <size>
-       <width>800</width>
-       <height>600</height>
-      </size>
-     </property>
      <property name="frameShape">
       <enum>QFrame::NoFrame</enum>
      </property>
