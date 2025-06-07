@@ -13,4 +13,4 @@ then
 fi
 qmake menu.pro -spec $QT_OTIMIZA "CONFIG-=debug release debug_and_release" "CONFIG+=release" && make qmake_all 1> /dev/null 2> /dev/null
 # make  $MAKEOPTS && strip release/menu && upx --best --ultra-brute menu && A=`tempfile` && rm -f $A ; mkdir $A && mv release/menu $A && make distclean && mv $A/menu .
-make -s $MAKEOPTS && strip release/menu &&                                  A=`tempfile` && rm -f $A            && mv release/menu $A && make distclean && mv $A menu && rm -fR GeneratedFiles/ release/ debug/
+make -s $MAKEOPTS && strip menu &&                                  A=`tempfile` && rm -f $A            && mv release/menu $A && make distclean && mv $A menu && rm -fR GeneratedFiles/ release/ debug/
