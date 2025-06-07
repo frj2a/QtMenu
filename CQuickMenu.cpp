@@ -34,7 +34,7 @@ CQuickMenu::CQuickMenu(QWidget *parent) : QWidget(parent)	{
 	pbImage->setChecked(false);
 	pbTools->setChecked(false);
 	pbSettings->setChecked(false);
-	connect(pbShutDown, &QPushButton::clicked, this, &CQuickMenu::signalShutDown);
+    // connect(pbShutDown, &QPushButton::clicked, this, &CQuickMenu::signalShutDown);
 	connect(mTimeLine, SIGNAL(finished()), this, SLOT(hideAll()));
 	mOpacidade = BOTAO_OPACIDADE;
 

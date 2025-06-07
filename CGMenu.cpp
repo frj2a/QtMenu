@@ -50,7 +50,7 @@ CGMenu::CGMenu(QWidget *parent) : QWidget(parent)	{
 	mGS->addItem(mForm4->background());
 	mGS->addItem(mWidget4);
 	connect(mForm4->mTimeLine, SIGNAL(frameChanged(int)), this, SLOT(time4Changed(int)));
-	connect(mForm4, &CQuickMenu::signalShutDown, this, &CGMenu::close);
+    // connect(mForm4, &CQuickMenu::signalShutDown, this, &CGMenu::deleteLater);
 
 	mBackgroundChangeTimer = new QTimer(this);
 	mBackgroundChangeTimer->setInterval(500);
@@ -74,7 +74,7 @@ CGMenu::~CGMenu()	{
 
 	disconnect(mForm2->mTimeLine, SIGNAL(frameChanged(int)), this, SLOT(time2Changed(int)));
 	disconnect(mForm4->mTimeLine, SIGNAL(frameChanged(int)), this, SLOT(time4Changed(int)));
-	disconnect(mForm4, &CQuickMenu::signalShutDown, this, &CGMenu::close);
+	// disconnect(mForm4, &CQuickMenu::signalShutDown, this, &CGMenu::close);
 	disconnect(cbMenu2Enabled, SIGNAL(toggled(bool)), this, SLOT(showMenu2(bool)));
 	mGS->removeItem(mWidget2);
 	mGS->removeItem(mWidget4);

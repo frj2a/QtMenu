@@ -61,12 +61,12 @@ void CQuickMenuLineEdit::inserirBotoes(QPushButton * aumenta,
 }
 
 CQuickMenuLineEdit::~CQuickMenuLineEdit()	{
-	disconnect(mBotAceita, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotAceitar);
-	disconnect(mBotCancela, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotRejeitar);
-	disconnect(mBotAumenta, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotAumentar);
-	disconnect(mBotDiminui, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotDiminuir);
-	disconnect(mBotAumenta, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
-	disconnect(mBotDiminui, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
+//	disconnect(mBotAceita, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotAceitar);
+//	disconnect(mBotCancela, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotRejeitar);
+//	disconnect(mBotAumenta, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotAumentar);
+//	disconnect(mBotDiminui, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotDiminuir);
+//	disconnect(mBotAumenta, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
+//	disconnect(mBotDiminui, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
 }
 
 void CQuickMenuLineEdit::mousePressEvent(QMouseEvent *evento)	{
@@ -76,12 +76,12 @@ void CQuickMenuLineEdit::mousePressEvent(QMouseEvent *evento)	{
 		if (!mSelecionado)	{
 			mSelecionado = true;
 			mValor = text().toInt();
-			connect(mBotAceita, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotAceitar);
-			connect(mBotCancela, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotRejeitar);
-			connect(mBotAumenta, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotAumentar);
-			connect(mBotDiminui, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotDiminuir);
-			connect(mBotAumenta, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
-			connect(mBotDiminui, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
+//			connect(mBotAceita, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotAceitar);
+//			connect(mBotCancela, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotRejeitar);
+//			connect(mBotAumenta, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotAumentar);
+//			connect(mBotDiminui, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotDiminuir);
+//			connect(mBotAumenta, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
+//			connect(mBotDiminui, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
 			setStyleSheet((QString)"background-image:url();background-color:rgb(0,255,0);");
 			emit signalSelecionado();
 		}
@@ -102,12 +102,12 @@ void CQuickMenuLineEdit::slotAceitar()	{
 	setStyleSheet((QString)"background-image: url();background-color:rgb(255,255,255);");
 	mSelecionado = false;
 	mValor = text().toInt();
-	disconnect(mBotAceita, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotAceitar);
-	disconnect(mBotCancela, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotRejeitar);
-	disconnect(mBotAumenta, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotAumentar);
-	disconnect(mBotDiminui, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotDiminuir);
-	disconnect(mBotAumenta, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
-	disconnect(mBotDiminui, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
+//	disconnect(mBotAceita, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotAceitar);
+//	disconnect(mBotCancela, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotRejeitar);
+//	disconnect(mBotAumenta, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotAumentar);
+//	disconnect(mBotDiminui, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotDiminuir);
+//	disconnect(mBotAumenta, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
+//	disconnect(mBotDiminui, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
 	mEstagio = BASE;
 	mIncremento = 1;
 	emit signalNovoValor(mValor);
@@ -118,12 +118,12 @@ void CQuickMenuLineEdit::slotRejeitar()	{
 		setStyleSheet((QString)"background-image: url();background-color:rgb(255,255,255);");
 		mSelecionado = false;
 		setText(QString::number(mValor));
-		disconnect(mBotAceita, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotAceitar);
-		disconnect(mBotCancela, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotRejeitar);
-		disconnect(mBotAumenta, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotAumentar);
-		disconnect(mBotDiminui, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotDiminuir);
-		disconnect(mBotAumenta, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
-		disconnect(mBotDiminui, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
+//		disconnect(mBotAceita, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotAceitar);
+//		disconnect(mBotCancela, &QPushButton::clicked, this, &CQuickMenuLineEdit::slotRejeitar);
+//		disconnect(mBotAumenta, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotAumentar);
+//		disconnect(mBotDiminui, &QPushButton::pressed, this, &CQuickMenuLineEdit::slotDiminuir);
+//		disconnect(mBotAumenta, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
+//		disconnect(mBotDiminui, &QPushButton::released, this, &CQuickMenuLineEdit::slotCancelarIncremento);
 	}
 	mEstagio = BASE;
 	mIncremento = 1;
@@ -133,7 +133,7 @@ void CQuickMenuLineEdit::slotAumentar()	{
 	mAumentar = true;
 	mTimer->setSingleShot(true);
 	mTimer->setInterval(800);
-	connect(mTimer, &QTimer::timeout, this, &CQuickMenuLineEdit::slotTimeOutPressed);
+//	connect(mTimer, &QTimer::timeout, this, &CQuickMenuLineEdit::slotTimeOutPressed);
 	mTimer->start();
 	ajustaValor(mAumentar);
 }
@@ -142,7 +142,7 @@ void CQuickMenuLineEdit::slotDiminuir()	{
 	mAumentar = false;
 	mTimer->setSingleShot(true);
 	mTimer->setInterval(800);
-	connect(mTimer, &QTimer::timeout, this, &CQuickMenuLineEdit::slotTimeOutPressed);
+//	connect(mTimer, &QTimer::timeout, this, &CQuickMenuLineEdit::slotTimeOutPressed);
 	mTimer->start();
 	ajustaValor(mAumentar);
 }
@@ -231,8 +231,8 @@ void CQuickMenuLineEdit::ajustaValor(bool positivo) {
 }
 
 void CQuickMenuLineEdit::slotTimeOutPressed() {
-	disconnect(mTimer, &QTimer::timeout, this, &CQuickMenuLineEdit::slotTimeOutPressed);
-	connect(mTimer, &QTimer::timeout, this, &CQuickMenuLineEdit::slotTimeOutRepeat);
+//	disconnect(mTimer, &QTimer::timeout, this, &CQuickMenuLineEdit::slotTimeOutPressed);
+//	connect(mTimer, &QTimer::timeout, this, &CQuickMenuLineEdit::slotTimeOutRepeat);
 	mTimer->setSingleShot(false);
 	mTimer->setInterval(333);
 	ajustaValor(mAumentar);
@@ -245,7 +245,7 @@ void CQuickMenuLineEdit::slotTimeOutRepeat() {
 
 void CQuickMenuLineEdit::slotCancelarIncremento() {
 	mTimer->stop();
-	disconnect(mTimer, &QTimer::timeout, this, &CQuickMenuLineEdit::slotTimeOutRepeat);
+//	disconnect(mTimer, &QTimer::timeout, this, &CQuickMenuLineEdit::slotTimeOutRepeat);
 	mTimer->setSingleShot(true);
 	mTimer->stop();
 	mEstagio = BASE;

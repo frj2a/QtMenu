@@ -6,7 +6,7 @@ then
 fi
 QT_OTIMIZA="linux-g++"
 MAQUINA=`uname -m`
-lrelease iView.pro 2> /dev/null
+lrelease menu.pro 2> /dev/null
 if [ "$MAQUINA" = "x86_64" ]
 then
         QT_OTIMIZA="linux-g++-64"

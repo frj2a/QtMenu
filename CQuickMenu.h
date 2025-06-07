@@ -52,6 +52,8 @@ public:
 signals:
 	void signalShutDown();
 
+friend class CGMenu;
+
 };
 
 #endif // CQUICKMENU_H
